@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shop</title>
+        <script src="main.js"></script>
+        <script src="mshop.js"></script>
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+    <body onload="total()">
+
+        <div id="products-main" class="">
+
+
+
+            <div id="totals">
+
+                <b>Total items in cart: </b>
+                <span id="total"></span><br><br>
+                <a href="shop.html">Checkout</a> | 
+                <a href="#" onclick="cart.clear()">Clear cart</a>
+                <hr><hr>
+
+            </div>
+
+
+            <div class="product">
+                <h2>HP Meckbook G4653D2</h2>
+                <p>leptop G4653D2 , i7 3400mgh 4GB DDR3</p>
+                <p><b>Price on site: </b>1300$</p>
+                <p>
+                   <input type="button" class="add" value="Add to cart" onclick="cart.add(this, 1 , 'HP Mecbook 3400' ,1300 , 1)">
+                </p>
+                 
+            </div>
+            
+            <div class="product">
+                <h2>acer Meckbook G4653D2</h2>
+                <p>leptop G4653D2 , i7 3400mgh 4GB DDR3</p>
+                <p><b>Price on site: </b>2300$</p>
+                <p>
+                    <input type="button" class="add" value="Add to cart" onclick="cart.add(this, 2 , 'ace Mecbook 3400' ,2300 , 1)">
+                </p>
+            </div>
+            <div class="product">
+                <h2>טלוויזיה Samsung UE55KU7000 4K</h2>
+                <p>יצרן:Samsung, גודל מסך:55‏ אינטש, ‏High Definition:4K, ‏Smart TV:Smart TV, תלת מימד:ללא, טכנולוגיה:LED, טלוויזיה קעורה:שטוחה, רזולוציה:3840x2160, תאריך כניסה </p>
+                <p><b>Price on site: </b>3000$</p>
+                <p>
+                    <input type="button" class="add" value="Add to cart" onclick="cart.add(this, 3 , 'Samsung UE55KU7000' ,3000 , 1)">
+                </p>
+            </div>
+
+
+
+
+        </div>
+    </body>
+ </html>
